@@ -1,0 +1,177 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+              android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    tools:context="com.example.administrator.busline_aition_fragment.RechargeFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_collection_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            style="@style/tv_title_actionbar"
+            android:text="@string/tab_collection" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/bg_white"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="卡号"
+            android:id="@+id/textView24"/>
+
+        <LinearLayout
+            android:background="@color/fengexian_color"
+            android:orientation="vertical"
+            android:layout_width="0.8dp"
+            android:layout_height="match_parent">
+        </LinearLayout>
+
+        <EditText
+            android:hint="请输入您的公交卡号"
+            android:paddingLeft="10dp"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/editText2"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="5dp"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ll_collection_titlebar"
+        android:id="@+id/linearLayout2">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="500"
+                style="@style/RechargeItem"
+                android:id="@+id/charge500"/>
+
+            <TextView
+                style="@style/RechargeItem"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="300"
+                android:id="@+id/charge300"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="200"
+                style="@style/RechargeItem"
+                android:id="@+id/charge200"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                style="@style/RechargeItem"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="100"
+                android:id="@+id/charge100"/>
+
+            <TextView
+                style="@style/RechargeItem"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="50"
+                android:id="@+id/charge50"/>
+
+            <TextView
+                style="@style/RechargeItem"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="20"
+                android:id="@+id/charge20"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/linearLayout2"
+        android:id="@+id/relativeLayout5">
+    </RelativeLayout>
+
+    <Button
+        android:layout_margin="10dp"
+        android:background="@drawable/collection_btn_selector"
+        android:textColor="@color/bg_white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="充值"
+        android:id="@+id/rechargeButton"
+        android:layout_below="@+id/relativeLayout5"
+        android:layout_centerHorizontal="true"/>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/ll_collection_titlebar"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:background="@color/bg_white"-->
+        <!--android:orientation="vertical"-->
+        <!--android:padding="12dp">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/btn_collection_add"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/collection_btn_selector"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="12dp"-->
+            <!--android:text="@string/fragment_collection_add"-->
+            <!--android:textColor="@color/bg_white" />-->
+    <!--</LinearLayout>-->
+
+</LinearLayout>

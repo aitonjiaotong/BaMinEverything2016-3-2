@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BaMinEverything2016-3-2.iml" filepath="$PROJECT_DIR$/BaMinEverything2016-3-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SMSSDK/SMSSDK.iml" filepath="$PROJECT_DIR$/SMSSDK/SMSSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circleimageview/circleimageview.iml" filepath="$PROJECT_DIR$/circleimageview/circleimageview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_shane/lib_shane.iml" filepath="$PROJECT_DIR$/lib_shane/lib_shane.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_slidingmenu/lib_slidingmenu.iml" filepath="$PROJECT_DIR$/lib_slidingmenu/lib_slidingmenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pulltorefresh/pulltorefresh.iml" filepath="$PROJECT_DIR$/pulltorefresh/pulltorefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/下拉放大图片/下拉放大图片.iml" filepath="$PROJECT_DIR$/下拉放大图片/下拉放大图片.iml" />
+      <module fileurl="file://$PROJECT_DIR$/八闽出行/八闽出行.iml" filepath="$PROJECT_DIR$/八闽出行/八闽出行.iml" />
+    </modules>
+  </component>
+</project>

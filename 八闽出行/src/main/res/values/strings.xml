@@ -1,0 +1,157 @@
+<resources>
+    <string name="app_name">长途客运</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="title_bar_search">长途客运</string>
+    <string name="set_out">出发</string>
+    <string name="arrive">到达</string>
+    <string name="set_out_time">出发时间</string>
+    <string name="choose_point_start">请选择出发地</string>
+    <string name="choose_point_end">请选择目的地</string>
+    <string name="search">查询</string>
+    <string name="search_hint">请输入到达站点/支持字母首拼音检索</string>
+
+    <string name="title_bar_ticket">票务查询</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_sms_login">SmsLoginActivity</string>
+    <string name="title_activity_fillin_order">FillinOrderActivity</string>
+    <string name="title_bar_fillin_order">填写订单</string>
+    <string name="title_activity_add_fetcher">AddFetcherActivity</string>
+    <string name="title_bar_add_fetcher">添加乘客</string>
+    <string name="title_activity_used_contact">UsedContact</string>
+    <string name="title_activity_ticket_notice">TicketNotice</string>
+    <string name="title_activity_take_tickets">TakeTickets</string>
+    <string name="title_activity_add_contact">AddContact</string>
+    <string name="title_activity_normal_problem">NormalProblem</string>
+    <string name="title_activity_soft_info">SoftInfo</string>
+    <string name="title_activity_ours">Ours</string>
+    <string name="title_activity_select_station_arrive">SelectStationArriveActivity</string>
+    <string name="title_activity_pay">PayActivity</string>
+    <string name="title_activity_order_deatil">OrderDeatilActivity</string>
+    <string name="title_activity_common_passager">CommonPassagerActivity</string>
+    <string name="title_activity_coupon_info">CouponInfoActivity</string>
+    <string name="title_activity_welcome">长途客运</string>
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="title_activity_feed_back">FeedBackActivity</string>
+    <string name="title_activity_back_ticket">BackTicketActivity</string>
+    <string name="title_activity_everyting">八闽出行</string>
+
+    <!--打车-->
+    <string name="title_activity_da_che">DaCheActivity</string>
+    <string name="title_activity_dai_jia">DaiJiaActivity</string>
+    <string name="title_activity_dai_jia02">DaiJia02Activity</string>
+    <string name="title_activity_ji_gou_yong_che">JiGouYongCheActivity</string>
+    <string name="title_activity_ji_gou_yong_che02">JiGouYongChe02Activity</string>
+    <string name="title_activity_ji_gou_yong_che04">JiGouYongCheActivity04</string>
+    <string name="title_activity_ji_gou_yong_che03">JiGouYongChe03Activity</string>
+    <string name="title_activity_men_dian">MenDianActivity</string>
+    <string name="title_activity_te_jia_tao_can">TeJiaTaoCanActivity</string>
+    <string name="title_activity_te_jia_tao_can02">TeJiaTaoCan02Activity</string>
+    <string name="title_activity_zi_jia_zu_che">ZiJiaZuCheActivity</string>
+    <string name="title_activity_zi_jia_zu_che02">ZiJiaZuChe02Activity</string>
+    <string name="title_activity_zi_jia_zu_che03">ZiJiaZuChe03Activity</string>
+    <string name="title_activity_zi_jia_zu_che04">ZiJiaZuChe04Activity</string>
+    <string name="title_activity_zi_jia_zu_che05">ZiJiaZuChe05Activity</string>
+    <!--打车-->
+    <!--公交-->
+    <string name="tab_nearby">实时查询</string>
+    <string name="tab_collection">在线充值</string>
+    <string name="tab_transfer">线路规划</string>
+    <string name="tab_me">下车提醒</string>
+    <string name="fragment_me_unlogin">未登录</string>
+    <string name="fragment_me_afterlogin">登录后可同步收藏夹</string>
+    <string name="fragment_me_synchronous">同步</string>
+    <string name="fragment_me_choose_city">选择城市</string>
+    <string name="fragment_me_offline_map">离线地图</string>
+    <string name="fragment_me_msgnotifi">消息通知</string>
+    <string name="fragment_me_getoff_remind">下车提醒</string>
+    <string name="fragment_me_setting">设置</string>
+    <string name="fragment_me_login_weixin">微信登录</string>
+    <string name="fragment_me_login_qq">QQ登录</string>
+    <string name="fragment_me_cancel">取消</string>
+    <string name="fragment_collection_hint">在这里可以方便地查看常坐公交车，省流量刷新呦！</string>
+    <string name="fragment_collection_add">添加常用线路</string>
+
+    <string name="search_recharge_point">充值点</string>
+    <string name="search_toilet">卫生间</string>
+    <string name="search_atm">取款机</string>
+
+    <string name="collection_add_search">输入您常坐的车</string>
+    <string name="collection_add_subtitle_nearby_bus">您附近的公交路线</string>
+
+    <string name="alert_subtitle_remind">您可以方便地查看常坐公交车。一键打开贴心的乘车提醒，看书、睡觉、听歌，都不怕坐过站!</string>
+
+    <string name="choose_city_actionbar_title">选择城市</string>
+    <string name="download_offline_map_actionbar_title">离线地图</string>
+
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_collection_add">CollectionAddActivity</string>
+    <string name="input_Loc_Activity">InputLocActivity</string>
+    <string name="title_activity_choose_city">ChooseCityActivity</string>
+    <string name="title_activity_down_load_off_line_map">DownLoadOffLineMapActivity</string>
+    <string name="title_activity_bus_line_info">BusLineInfoActivity</string>
+    <string name="title_activity_map">MapActivity</string>
+    <!--公交-->
+    <!--吃喝玩乐-->
+    <string name="title_activity_mei_yuan">MeiYuanActivity</string>
+    <string name="title_activity_qiang_guo">QiangGuoActivity</string>
+    <string name="title_activity_a">AActivity</string>
+    <string name="title_activity_b">BActivity</string>
+    <string name="title_activity_c">CActivity</string>
+    <string name="title_activity_d">DActivity</string>
+    <string name="title_activity_e">EActivity</string>
+    <string name="title_activity_f">FActivity</string>
+    <string name="title_activity_g">GActivity</string>
+    <string name="title_activity_h">HActivity</string>
+    <string name="title_activity_i">IActivity</string>
+    <string name="title_activity_j">JActivity</string>
+    <string name="title_activity_k">KActivity</string>
+    <string name="title_activity_l">LActivity</string>
+    <string name="title_activity_yan_jiang_lou">YanJiangLouActivity</string>
+    <!--吃喝玩乐-->
+    <!--代办跑腿-->
+    <string name="title_activity_pao_tui">PaoTuiActivity</string>
+    <string name="title_activity_pao_tui_shun_gou">PaoTuiShunGouActivity</string>
+    <string name="title_activity_gou_wu_che">GouWuCheActivity</string>
+    <string name="title_activity_pao_tui_qu_song">PaoTuiQuSongActivity</string>
+    <string name="title_activity_pao_tui_qu_song02">PaoTuiQuSong02Activity</string>
+    <string name="title_activity_pao_tui_pai_dui">PaoTuiPaiDuiActivity</string>
+    <string name="title_activity_pao_tui_pai_dui02">PaoTuiPaiDui02Activity</string>
+    <string name="title_activity_si_ren_ding_zhi">SiRenDingZhiActivity</string>
+    <string name="title_activity_si_ren_ding_zhi02">SiRenDingZhi02Activity</string>
+    <string name="title_activity_jiao_na_fa_kuan">JiaoNaFaKuanActivity</string>
+    <string name="title_activity_song_can">SongCanActivity</string>
+    <string name="title_activity_yuo_hui_chong_zhi">YuoHuiChongZhiActivity</string>
+    <string name="title_activity_te_kuai_shang_cheng">TeKuaiShangChengActivity</string>
+    <!--代办跑腿-->
+    <!--汽车管家-->
+    <!--汽车管家-->
+    <string name="title_activity_chu_jing_you">ChuJingYouActivity</string>
+    <string name="title_activity_guo_nei_you">GuoNeiYouActivity</string>
+    <string name="title_activity_zhou_bian_you">ZhouBianYouActivity</string>
+
+    <string name="title_activity_kuai_di_xia_dan">KuaiDiXiaDanActivity</string>
+    <string name="title_activity_di_zhi">DiZhiActivity</string>
+    <string name="title_activity_kuai_di_cha_xun">KuaiDiChaXunActivity</string>
+    <string name="title_activity_wu_liu_xia_dan">WuLiuXiaDanActivity</string>
+    <string name="title_activity_wu_liu_cha_xun">WuLiuChaXunActivity</string>
+
+
+    <string name="title_activity_web">WebActivity</string>
+    <string name="title_activity_set">SetActivity</string>
+    <string name="title_activity_wodebaodan">WodebaodanActivity</string>
+    <string name="title_activity_wodedingdan">WodedingdanActivity</string>
+    <string name="title_activity_wodehongbao">WodehongbaoActivity</string>
+    <string name="title_activity_beibaoren">BeibaorenActivity</string>
+    <string name="title_activity_gerenxinxi">GerenxinxiActivity</string>
+    <string name="title_activity_xiaoxizhongxin">XiaoxizhongxinActivity</string>
+
+</resources>

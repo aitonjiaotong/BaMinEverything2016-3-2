@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:ViewPagerIndicator="http://schemas.android.com/apk/res-auto"
+                tools:context=".GuideActivity">
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/myPager"
+        >
+
+    </android.support.v4.view.ViewPager>
+    <com.example.zjb.bamin.customView.ViewPagerIndicator
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:id="@+id/ViewPagerIndicator"
+        ViewPagerIndicator:indicatorCount="3"
+        ViewPagerIndicator:radiusSize="10dp"
+        ViewPagerIndicator:layout_position="middle"
+
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button_guide"
+        android:layout_toEndOf="@+id/button_guide"
+        android:layout_marginBottom="80dp"
+        ></com.example.zjb.bamin.customView.ViewPagerIndicator>
+
+</RelativeLayout>

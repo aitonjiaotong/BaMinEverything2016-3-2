@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.jiaotong.aiton.aiton.fragment.FragmentNearby">
+
+    <!--<com.baidu.mapapi.map.MapView-->
+        <!--android:id="@+id/bmapView"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:clickable="true" />-->
+
+    <!--<RelativeLayout-->
+        <!--android:background="@color/bg_white"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_gravity="center_horizontal|top"-->
+        <!--android:id="@+id/relativeLayout2">-->
+
+        <!--<ImageView-->
+            <!--android:src="@mipmap/ico_search_black_input"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:id="@+id/imageView6"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="搜索"-->
+            <!--android:id="@+id/textView4"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toRightOf="@+id/imageView6"-->
+            <!--android:layout_toEndOf="@+id/imageView6"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginStart="23dp"/>-->
+    <!--</RelativeLayout>-->
+
+    <RelativeLayout
+
+        android:background="@color/bg_white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal|top"
+        android:id="@+id/hehe_rela">
+
+        <TextView
+            style="@style/tv_title_actionbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本站公交"
+            android:id="@+id/textView5"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:src="@mipmap/route_detail_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView8"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="18dp"/>
+
+        <LinearLayout
+            android:background="@color/fengexian_color"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+        </LinearLayout>
+
+        <ImageView
+            android:src="@mipmap/icon_nav_map"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/map"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="14dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/woyaohua"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/hehe_rela">
+
+        <ListView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/RealTimeRomote_listView"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <com.baidu.mapapi.map.MapView
+        android:visibility="gone"
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:layout_below="@+id/hehe_rela"/>
+
+</RelativeLayout>

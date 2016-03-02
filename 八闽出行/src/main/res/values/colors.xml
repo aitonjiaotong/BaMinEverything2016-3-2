@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#dedede</color>
+    <color name="title_bar">#ff7d27</color>
+    <color name="title_bar_deep">#FFFF5218</color>
+    <color name="title_bar_light">#ff7d27</color>
+    <color name="tabs_select">#faa834</color>
+    <color name="tabs_unselect">#181818</color>
+    <color name="line_gray">#d0d0d0</color>
+
+    <color name="title_bar_text_color">#FFFFFF</color>
+    <color name="fillin_order_head_bg">#faf0e4</color>
+    <color name="fillin_order_pay_gray_bg">#4e4e4e</color>
+    <color name="black">#000000</color>
+    <color name="aiton_basic_color">#ff7d27</color>
+    <color name="red">#FF0000</color>
+    <color name="bule">#ff7d27</color>
+    <color name="bule_light">#ff7d27</color>
+
+
+    <!--状态栏的颜色-->
+    <color name="colorPrimaryDark">#ff7d27</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="half_color">#30000000</color>
+
+    <!--公交颜色-->
+    <color name="bg_green_normal">#ff7d27</color>
+    <color name="bg_green_selector">#FFFF5218</color>
+    <color name="bg_white">#FFFFFF</color>
+    <color name="bg_gray">#f0f0f0</color>
+    <color name="bg_transparent_black">#99000000</color>
+    <color name="bg_red">#f85959</color>
+    <color name="fengexian_color">#e8e8e8</color>
+
+    <color name="hint_gray">#c3c3c3</color>
+
+    <color name="aiton_green">#ff7d27</color>
+    <color name="aiton_gray">#b6b6b6</color>
+
+    <color name="tv_black_normal">#000000</color>
+    <color name="tv_black_pressed">#C0C0C0</color>
+    <!--公交颜色-->
+
+
+
+</resources>

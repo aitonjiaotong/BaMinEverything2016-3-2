@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.zjb.bamin"
+    android:versionCode="1"
+    android:versionName="1.0.0版本" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 短信验证 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 短信验证 -->
+    <!-- 读取短信 -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!-- 百度地图 -->
+    <!-- 百度地图开发相关权限 -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- 百度地图 -->
+    <!-- 读取短信 -->
+    <!-- 支付宝相关权限 -->
+    <!-- 和短信验证权限重复 -->
+    <!-- 支付宝相关权限 -->
+    <application
+        android:name=".application.App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- 百度地图开发KEY -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="YpQxGG9vQeeAeg9bT51FEZGR" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <!-- 支付宝相关activity -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+
+        <!-- 支付宝相关activity -->
+
+        <activity
+            android:name=".SelectStationSetOutActivity"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity android:name=".TicketActivity" />
+        <activity
+            android:name=".SettingActivity"
+            android:label="@string/title_activity_setting" >
+        </activity>
+        <activity
+            android:name=".SmsLoginActivity"
+            android:label="@string/title_activity_sms_login" >
+        </activity>
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".FillinOrderActivity"
+            android:label="@string/title_activity_fillin_order"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name=".AddFetcherActivity"
+            android:label="@string/title_activity_add_fetcher" >
+        </activity>
+        <activity
+            android:name=".UsedContact"
+            android:label="@string/title_activity_used_contact" >
+        </activity>
+        <activity
+            android:name=".TicketNotice"
+            android:label="@string/title_activity_ticket_notice" >
+        </activity>
+        <activity
+            android:name=".TakeTickets"
+            android:label="@string/title_activity_take_tickets" >
+        </activity>
+        <activity
+            android:name=".NormalProblem"
+            android:label="@string/title_activity_normal_problem" >
+        </activity>
+        <activity
+            android:name=".SoftInfo"
+            android:label="@string/title_activity_soft_info" >
+        </activity>
+        <activity
+            android:name=".Ours"
+            android:label="@string/title_activity_ours" >
+        </activity>
+        <activity
+            android:name=".SelectStationArriveActivity"
+            android:label="@string/title_activity_select_station_arrive"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name=".PayActivity"
+            android:label="@string/title_activity_pay" >
+        </activity>
+        <activity
+            android:name=".OrderDeatilActivity"
+            android:label="@string/title_activity_order_deatil" >
+        </activity>
+        <activity
+            android:name=".CouponInfoActivity"
+            android:label="@string/title_activity_coupon_info" >
+        </activity>
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/title_activity_welcome" >
+        </activity>
+        <activity
+            android:name=".GuideActivity"
+            android:label="@string/title_activity_guide" >
+        </activity>
+        <activity
+            android:name=".FeedBackActivity"
+            android:label="@string/title_activity_feed_back" >
+        </activity>
+        <activity
+            android:name=".BackTicketActivity"
+            android:label="@string/title_activity_back_ticket" >
+        </activity>
+        <activity
+            android:name=".EverytingActivity"
+            android:label="@string/title_activity_everyting"
+            android:windowSoftInputMode="adjustNothing" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 打车类Activity -->
+        <activity
+            android:name=".DaCheActivity.MainDacheActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".DaCheActivity.DaCheActivity"
+            android:label="@string/title_activity_da_che" >
+        </activity>
+        <activity
+            android:name=".DaCheActivity.DaiJiaActivity"
+            android:label="@string/title_activity_dai_jia" >
+        </activity>
+        <activity
+            android:name=".DaCheActivity.DaiJia02Activity"
+            android:label="@string/title_activity_dai_jia02" >
+        </activity>
+        <activity
+            android:name=".DaCheActivity.JiGouYongCheActivity"
+            android:label="@string/title_activity_ji_gou_yong_che" >
+        </activity>
+        <activity
+            android:name=".DaCheActivity.JiGouYongChe04Activity"
+            android:label="@string/title_activity_ji_gou_yong_che02" >
+        </activity>
+        <activity
+            android:name=".DaCheActivity.JiGouYongCheActivity04"
+            android:label="@string/title_activity_ji_gou_yong_che04" >
+        </activity>
+        <activity
+            android:name=".DaCheActivity.JiGouYongChe02Activity"
+            android:label="@string/title_activity_ji_gou_yong_che02" >
+        </activity>
+        <activity
+            android:name=".DaCheActivity.JiGouYongChe03Activity"
+            android:label="@string/title_activity_ji_gou_yong_che03" >
+        </activity>
+        <activity
+            android:name=".DaCheActivity.MenDianActivity"
+            android:label="@string/title_activity_men_dian" >
+        </activity>
+        <activity
+            android:name=".DaCheActivity.TeJiaTaoCanActivity"
+            android:label="@string/title_activity_te_jia_tao_can" >
+        </activity>
+        <activity
+            android:name=".DaCheActivity.TeJiaTaoCan02Activity"
+            android:label="@string/title_activity_te_jia_tao_can02" >
+        </activity>
+        <activity
+            android:name=".DaCheActivity.ZiJiaZuCheActivity"
+            android:label="@string/title_activity_zi_jia_zu_che" >
+        </activity>
+        <activity
+            android:name=".DaCheActivity.ZiJiaZuChe02Activity"
+            android:label="@string/title_activity_zi_jia_zu_che02" >
+        </activity>
+        <activity
+            android:name=".DaCheActivity.ZiJiaZuChe03Activity"
+            android:label="@string/title_activity_zi_jia_zu_che03" >
+        </activity>
+        <activity
+            android:name=".DaCheActivity.ZiJiaZuChe04Activity"
+            android:label="@string/title_activity_zi_jia_zu_che04" >
+        </activity>
+        <activity
+            android:name=".DaCheActivity.ZiJiaZuChe05Activity"
+            android:label="@string/title_activity_zi_jia_zu_che05" >
+        </activity>
+        <!-- 打车类Activity -->
+        <!-- 公交 -->
+        <activity
+            android:name=".busline.busline_aiton.MainBusLineActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity
+            android:name=".busline.busline_aiton.CollectionAddActivity"
+            android:label="@string/title_activity_collection_add" >
+        </activity>
+        <activity
+            android:name=".busline.busline_aiton.InputLocActivity"
+            android:label="@string/input_Loc_Activity" >
+        </activity>
+        <activity
+            android:name=".busline.busline_aiton.ChooseCityActivity"
+            android:label="@string/title_activity_choose_city" >
+        </activity>
+        <activity
+            android:name=".busline.busline_aiton.DownLoadOffLineMapActivity"
+            android:label="@string/title_activity_down_load_off_line_map" >
+        </activity>
+        <activity
+            android:name=".busline.busline_aiton.BusLineInfoActivity"
+            android:label="@string/title_activity_bus_line_info" >
+        </activity>
+        <activity
+            android:name=".busline.busline_aiton.PayBusLineActivity"
+            android:label="@string/title_activity_pay" >
+        </activity>
+        <activity
+            android:name=".busline.busline_aiton.MapActivity"
+            android:label="@string/title_activity_map" >
+        </activity>
+        <!-- 公交 -->
+        <!-- 吃喝玩乐 -->
+        <activity
+            android:name=".ChiHeWanLe.MainCheHeWanLeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ChiHeWanLe.MeiYuanActivity"
+            android:label="@string/title_activity_mei_yuan" >
+        </activity>
+        <activity
+            android:name=".ChiHeWanLe.QiangGuoActivity"
+            android:label="@string/title_activity_qiang_guo" >
+        </activity>
+        <activity
+            android:name=".ChiHeWanLe.AActivity"
+            android:label="@string/title_activity_a" >
+        </activity>
+        <activity
+            android:name=".ChiHeWanLe.BActivity"
+            android:label="@string/title_activity_b" >
+        </activity>
+        <activity
+            android:name=".ChiHeWanLe.CActivity"
+            android:label="@string/title_activity_c" >
+        </activity>
+        <activity
+            android:name=".ChiHeWanLe.EActivity"
+            android:label="@string/title_activity_e" >
+        </activity>
+        <activity
+            android:name=".ChiHeWanLe.DActivity"
+            android:label="@string/title_activity_d" >
+        </activity>
+        <activity
+            android:name=".ChiHeWanLe.FActivity"
+            android:label="@string/title_activity_f" >
+        </activity>
+        <activity
+            android:name=".ChiHeWanLe.GActivity"
+            android:label="@string/title_activity_g" >
+        </activity>
+        <activity
+            android:name=".ChiHeWanLe.HActivity"
+            android:label="@string/title_activity_h" >
+        </activity>
+        <activity
+            android:name=".ChiHeWanLe.IActivity"
+            android:label="@string/title_activity_i" >
+        </activity>
+        <activity
+            android:name=".ChiHeWanLe.JActivity"
+            android:label="@string/title_activity_j" >
+        </activity>
+        <activity
+            android:name=".ChiHeWanLe.KActivity"
+            android:label="@string/title_activity_k" >
+        </activity>
+        <activity
+            android:name=".ChiHeWanLe.LActivity"
+            android:label="@string/title_activity_l" >
+        </activity>
+        <!-- 吃喝玩乐 -->
+        <!-- 代办跑腿 -->
+        <activity
+            android:name=".daiBanPaoTui.MainDaiBanPaoTuiActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".daiBanPaoTui.PaoTuiActivity"
+            android:label="@string/title_activity_pao_tui" >
+        </activity>
+        <activity
+            android:name=".daiBanPaoTui.PaoTuiShunGouActivity"
+            android:label="@string/title_activity_pao_tui_shun_gou" >
+        </activity>
+        <activity
+            android:name=".daiBanPaoTui.GouWuCheActivity"
+            android:label="@string/title_activity_gou_wu_che" >
+        </activity>
+        <activity
+            android:name=".daiBanPaoTui.PaoTuiQuSongActivity"
+            android:label="@string/title_activity_pao_tui_qu_song" >
+        </activity>
+        <activity
+            android:name=".daiBanPaoTui.PaoTuiQuSong02Activity"
+            android:label="@string/title_activity_pao_tui_qu_song02" >
+        </activity>
+        <activity
+            android:name=".daiBanPaoTui.PaoTuiPaiDuiActivity"
+            android:label="@string/title_activity_pao_tui_pai_dui" >
+        </activity>
+        <activity
+            android:name=".daiBanPaoTui.PaoTuiPaiDui02Activity"
+            android:label="@string/title_activity_pao_tui_pai_dui02" >
+        </activity>
+        <activity
+            android:name=".daiBanPaoTui.SiRenDingZhiActivity"
+            android:label="@string/title_activity_si_ren_ding_zhi" >
+        </activity>
+        <activity
+            android:name=".daiBanPaoTui.SiRenDingZhi02Activity"
+            android:label="@string/title_activity_si_ren_ding_zhi02" >
+        </activity>
+        <activity
+            android:name=".daiBanPaoTui.DaiJiaActivity"
+            android:label="@string/title_activity_dai_jia" >
+        </activity>
+        <activity
+            android:name=".daiBanPaoTui.DaiJia02Activity"
+            android:label="@string/title_activity_dai_jia02" >
+        </activity>
+        <activity
+            android:name=".daiBanPaoTui.JiaoNaFaKuanActivity"
+            android:label="@string/title_activity_jiao_na_fa_kuan" >
+        </activity>
+        <activity
+            android:name=".daiBanPaoTui.SongCanActivity"
+            android:label="@string/title_activity_song_can" >
+        </activity>
+        <!-- 代办跑腿 -->
+        <!-- 汽车管家 -->
+        <activity
+            android:name=".qicheguanjia.MainQiCheGuanJiaActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".qicheguanjia.AActivity"
+            android:label="@string/title_activity_a" >
+        </activity>
+        <activity
+            android:name=".qicheguanjia.BActivity"
+            android:label="@string/title_activity_b" >
+        </activity>
+        <activity
+            android:name=".qicheguanjia.CActivity"
+            android:label="@string/title_activity_c" >
+        </activity>
+        <!-- 汽车管家 -->
+        <activity
+            android:name=".YouHuiChongZhi.YuoHuiChongZhiActivity"
+            android:label="@string/title_activity_yuo_hui_chong_zhi" >
+        </activity>
+        <activity
+            android:name=".TeKuaiShangCheng.TeKuaiShangChengActivity"
+            android:label="@string/title_activity_te_kuai_shang_cheng" >
+        </activity>
+        <!--汽车管家-->
+        <!--旅行旅游-->
+        <activity
+            android:name=".lvyoulvxing.MainlvyouActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".lvyoulvxing.ChuJingYouActivity"
+            android:label="@string/title_activity_chu_jing_you" >
+        </activity>
+        <activity
+            android:name=".lvyoulvxing.GuoNeiYouActivity"
+            android:label="@string/title_activity_guo_nei_you" >
+        </activity>
+        <activity
+            android:name=".lvyoulvxing.ZhouBianYouActivity"
+            android:label="@string/title_activity_zhou_bian_you" >
+        </activity>
+        <!--旅行旅游-->
+        <!--快递物流-->
+        <activity
+            android:name=".kuaidiwuliu.MainkuaidiwuliuActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".kuaidiwuliu.KuaiDiXiaDanActivity"
+            android:label="@string/title_activity_kuai_di_xia_dan" >
+        </activity>
+        <activity
+            android:name=".kuaidiwuliu.DiZhiActivity"
+            android:label="@string/title_activity_di_zhi" >
+        </activity>
+        <activity
+            android:name=".kuaidiwuliu.KuaiDiChaXunActivity"
+            android:label="@string/title_activity_kuai_di_cha_xun" >
+        </activity>
+        <activity
+            android:name=".kuaidiwuliu.WuLiuXiaDanActivity"
+            android:label="@string/title_activity_wu_liu_xia_dan" >
+        </activity>
+        <activity
+            android:name=".kuaidiwuliu.WuLiuChaXunActivity"
+            android:label="@string/title_activity_wu_liu_cha_xun" >
+        </activity>
+        <!--快递物流-->
+
+        <!--保险超市-->
+        <activity
+            android:name=".BaoXianChaoShi.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".BaoXianChaoShi.WebActivity"
+            android:label="@string/title_activity_web" >
+        </activity>
+        <activity
+            android:name=".BaoXianChaoShi.SetActivity"
+            android:label="@string/title_activity_set" >
+        </activity>
+        <activity
+            android:name=".BaoXianChaoShi.WodebaodanActivity"
+            android:label="@string/title_activity_wodebaodan" >
+        </activity>
+        <activity
+            android:name=".BaoXianChaoShi.WodedingdanActivity"
+            android:label="@string/title_activity_wodedingdan" >
+        </activity>
+        <activity
+            android:name=".BaoXianChaoShi.WodehongbaoActivity"
+            android:label="@string/title_activity_wodehongbao" >
+        </activity>
+        <activity
+            android:name=".BaoXianChaoShi.BeibaorenActivity"
+            android:label="@string/title_activity_beibaoren" >
+        </activity>
+        <activity
+            android:name=".BaoXianChaoShi.GerenxinxiActivity"
+            android:label="@string/title_activity_gerenxinxi" >
+        </activity>
+        <activity
+            android:name=".BaoXianChaoShi.XiaoxizhongxinActivity"
+            android:label="@string/title_activity_xiaoxizhongxin" >
+        </activity>
+
+        <!--保险超市-->
+    </application>
+
+</manifest>
